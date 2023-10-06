@@ -5,21 +5,21 @@
 class Pira < Formula
   desc "Generate Terraform moved blocks automatically for painless refactoring"
   homepage "https://github.com/piaverous/pira"
-  version "0.0.2"
+  version "0.0.3"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/piaverous/pira/releases/download/v0.0.2/pira_0.0.2_Darwin_arm64.tar.gz"
-      sha256 "54bf16563a942e1030b1175bd262a20a0bcbdb270bdea8c9b5954e4e4aa0b848"
+      url "https://github.com/piaverous/pira/releases/download/v0.0.3/pira_Darwin_arm64.tar.gz"
+      sha256 "d924470d643f13a7c175013c927ac0c2fbbd4f477e9d27c0c7e2ba3f142e5351"
 
       def install
         bin.install "pira"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/piaverous/pira/releases/download/v0.0.2/pira_0.0.2_Darwin_x86_64.tar.gz"
-      sha256 "0095c88f221b34633e279488b26bd6ebea64467f5dd35ea7fa93939128cea2bd"
+      url "https://github.com/piaverous/pira/releases/download/v0.0.3/pira_Darwin_x86_64.tar.gz"
+      sha256 "cc94e6c5d1a4f86387965570ccbdd53f2b17cb5100df6069112f69e5cd06d144"
 
       def install
         bin.install "pira"
@@ -29,16 +29,16 @@ class Pira < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/piaverous/pira/releases/download/v0.0.2/pira_0.0.2_Linux_arm64.tar.gz"
-      sha256 "663ba8ae87df0ce769bc01d62b1779de8bf0106f1ba435eba7687e2ec582c8d6"
+      url "https://github.com/piaverous/pira/releases/download/v0.0.3/pira_Linux_arm64.tar.gz"
+      sha256 "8e91b9450b621f8ee50182625c1c7f03db2b1e70fb1ccb6e5b3dafb664b748e3"
 
       def install
         bin.install "pira"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/piaverous/pira/releases/download/v0.0.2/pira_0.0.2_Linux_x86_64.tar.gz"
-      sha256 "8f14d23a570617c33f676827240403d64836931117bc4de531130a3cff411bfa"
+      url "https://github.com/piaverous/pira/releases/download/v0.0.3/pira_Linux_x86_64.tar.gz"
+      sha256 "413c721b9657f85dcfaa150608688f7e61a1b46d5e423d419769dfb88353ace0"
 
       def install
         bin.install "pira"
