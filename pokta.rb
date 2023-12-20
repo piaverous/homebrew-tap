@@ -5,21 +5,21 @@
 class Pokta < Formula
   desc "Interact with Jira from your terminal"
   homepage "https://github.com/piaverous/pokta"
-  version "0.0.1"
+  version "0.0.2"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/piaverous/pokta/releases/download/v0.0.1/pokta_Darwin_arm64.tar.gz"
-      sha256 "18bcabefc9c1cb05481290346f8f00e5c9a0105073fd958f49fa4e5124fd72ac"
+      url "https://github.com/piaverous/pokta/releases/download/v0.0.2/pokta_Darwin_arm64.tar.gz"
+      sha256 "caea2e5234a1f2222d77a281eb162d1b4c206353297621dc38d083c8c550b25d"
 
       def install
         bin.install "pokta"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/piaverous/pokta/releases/download/v0.0.1/pokta_Darwin_x86_64.tar.gz"
-      sha256 "242f9c1f68bf861e742e8a149d76b1fd934f9fec7ddce46dd84bb0fbbf6b91ea"
+      url "https://github.com/piaverous/pokta/releases/download/v0.0.2/pokta_Darwin_x86_64.tar.gz"
+      sha256 "49231044ccbfbbfbd55010b83f947a133bf0d3e903b8fcfcf4fd9e6ef0809d04"
 
       def install
         bin.install "pokta"
@@ -29,16 +29,16 @@ class Pokta < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/piaverous/pokta/releases/download/v0.0.1/pokta_Linux_arm64.tar.gz"
-      sha256 "f215f8a93df9b7d6fbfe35de92cf91318969582237194e656a41145f85b520a4"
+      url "https://github.com/piaverous/pokta/releases/download/v0.0.2/pokta_Linux_arm64.tar.gz"
+      sha256 "a63dfd10aad03d20d3e0b2abe3595284837639dad0ee7d2f06c2c96458a1765c"
 
       def install
         bin.install "pokta"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/piaverous/pokta/releases/download/v0.0.1/pokta_Linux_x86_64.tar.gz"
-      sha256 "510417fa8d4263f93a1568a4b01c9298797b42faf5e8e6a66f2c1f2fed17d5e4"
+      url "https://github.com/piaverous/pokta/releases/download/v0.0.2/pokta_Linux_x86_64.tar.gz"
+      sha256 "8ffd2ffc7368529b6b59705992a46bbe6d298c3f00f30a9901ef9432ef29025a"
 
       def install
         bin.install "pokta"
